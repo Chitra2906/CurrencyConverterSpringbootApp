@@ -15,7 +15,7 @@ public class CurrencyService {
 	@Autowired
 	CurrencyData data;
 	private final Logger logger =LoggerFactory.getLogger(this.getClass());
-	DecimalFormat numberFormat = new DecimalFormat("#.00");
+	DecimalFormat numberFormat = new DecimalFormat("#.000");
 	
 	public String exchangeCurrency(String toCode , double amount) {
 		logger.info("exchangeCurrency method in service entered");
